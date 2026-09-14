@@ -1,0 +1,109 @@
+﻿<!DOCTYPE HTML>
+<html lang="hr">
+<head>
+	
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg">
+	<meta name="description" content="VERN - Projekt Internetska platforma">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Viktor Habazin">
+	
+	<!-- Google Fonts - Lato -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<title>WEB STRANICA NACIONALNI PARKOVI - PRIMJER</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- header, nav -->
+	<header>
+        <div class="header-div">
+            <div class="header-img-div">
+            </div>
+        </div>
+
+		<nav>
+			<!-- Hamburger menu button -->
+			<label for="menu-toggle" class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			
+			<!-- Hidden checkbox -->
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			
+			
+			<a href="index.html" class="nav-logo"><img src="images/logo-parkovi.png" alt="Logo parkovi" title="Logo parkovi"></a>
+<ul id="nav-menu">
+				<li><a href="index.html">Početna</a></li>
+				<li><a href="novosti.html">Parkovi</a></li> <!-- ime sam promijenila zbog sadržaja ali poveznica i koncept su isti-->
+				<li><a href="kontakt.html" class="active">Kontakt</a></li>
+				<li><a href="o_nama.html">O nama</a></li>
+				<li><a href="galerija.html">Galerija</a></li>
+			  </ul>
+		</nav>
+	</header>
+        <main>
+		<h1>Kontakt</h1>
+        <div class="contact-row">
+            <div class="contact-left">
+               <h2>Info</h2>
+                <p><b>TZ - Hrvatska</b></p>
+                <p>Trg Drage Iblera 10/IV<br>10000 Zagreb</p>
+                <p>Email: info@htz.hr</p>
+            </div>
+            <div class="contact-right">
+                <iframe class="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1961.4269200030342!2d15.984465995130009!3d45.812991880685026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6555592f255%3A0x77d2f22eed10934!2sHrvatska%20turisti%C4%8Dka%20zajednica%20-%20Zagreb!5e1!3m2!1shr!2shr!4v1768066964658!5m2!1shr!2shr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="#" id="contact_form" name="contact_form" method="POST">
+                    <div>
+                        <label for="ime">Ime *</label>
+                        <input type="text" id="ime" name="tvojeime" placeholder="Upiši ime" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="prezime">Prezime *</label>
+                        <input type="text" id="prezime" name="tvojeprezime" placeholder="Upiši prezime" required>
+                    </div>
+                    <br>
+                    <div>	
+                        <label for="email">E-mail adresa *</label>
+                        <input type="email" id="email" name="email" placeholder="Upiši E-mail adresu" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="drzave">Država</label>
+                        <select id="drzave" name="country" >
+                        <option value="">Odaberi s popisa</option>
+                        <option value="BE">Belgija</option>
+                        <option value="HR" selected>Hrvatska</option>
+                        <option value="LU">Luksemburg</option>
+                        <option value="HU">Mađarska</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="message">Poruka</label>
+                        <textarea id="message" name="message" placeholder="Upiši poruku" ></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit"  value="Pošalji"> 
+                    </div>
+            </form>
+        </div>
+	</main>
+        <footer>
+        <div class="footerDiv">
+            <p>Copyright &copy; 2026 - Viktor Habazin by<a href="https://github.com"><strong>Github </strong><img src="images/github.svg" title="Github" alt="Github" style="width:18px; margin-bottom: -3px;"></a></p>
+        </div>
+    </footer>
+</body>
+</html>
